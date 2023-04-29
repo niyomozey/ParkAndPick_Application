@@ -13,7 +13,7 @@ export function checkAuthentication(req, res, next) {
     if (!token) {
       throw new Error("You are not logged in! Please log in to get access.");
     }
-    const decoded = jwt.verify(token, process.env.JWT_SECRET);
+    const decoded = jwt.verify(token, 'parkandpick');
     req.userData = decoded;
     next();
   } catch (error) {
