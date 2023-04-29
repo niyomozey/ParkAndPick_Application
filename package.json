@@ -11,7 +11,7 @@
   },
   "scripts": {
     "build": "babel src --out-dir build",
-    "start": "babel-node src/server.js",
+    "start": "babel-node app.js",
     "pre-dev": "babel-node src/server.js",
     "dev": "npm run dev:migrate:reset && cross-env NODE_ENV=development nodemon --exec npm run pre-dev ",
     "start:dev": "nodemon --exec babel-node src/server.js",
