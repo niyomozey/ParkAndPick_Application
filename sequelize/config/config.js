@@ -3,26 +3,26 @@ require("dotenv").config();
 
 module.exports = {
   development: {
-    username: process.env.POSTGRES_USER,
-    password: process.env.POSTGRES_PASSWORD,
-    database: process.env.DATABASE_NAME,
-    host: process.env.HOST,
+    username: 'utmjdqnc',
+    password: 'Cnh179o_OJ0sv2cdAhjbZKJ91OoHI64f',
+    database: 'utmjdqnc',
+    host: 'rosie.db.elephantsql.com',
     dialect: "postgres",
 
 
   },
   test: {
-    username: process.env.POSTGRES_USER,
-    password: process.env.POSTGRES_PASSWORD,
-    database: process.env.TESTING_DATABASE_NAME,
-    host: process.env.HOST,
+    username: 'utmjdqnc',
+    password: 'Cnh179o_OJ0sv2cdAhjbZKJ91OoHI64f',
+    database: 'utmjdqnc',
+    host: 'rosie.db.elephantsql.com',
     dialect: "postgres",
 
 
   },
   production: {
     use_env_variable: 'DATABASE_URL',
-    url: process.env.DATABASE_URL,
+    url: 'postgres://utmjdqnc:Cnh179o_OJ0sv2cdAhjbZKJ91OoHI64f@rosie.db.elephantsql.com/utmjdqnc',
     dialect: "postgres",
     dialectOptions: {
       ssl: {
