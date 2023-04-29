@@ -20,6 +20,7 @@ if (config.use_env_variable) {
     config.username,
     config.password, {
       host: config.host,
+      port: config.port,
       dialect: config.dialect,
     });
   }catch(err){
