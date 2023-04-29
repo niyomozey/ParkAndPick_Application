@@ -15,12 +15,17 @@ const db = {};
 
 let sequelize;
 if (config.use_env_variable) {
+  try{
   sequelize = new Sequelize(config.database,
     config.username,
     config.password, {
       host: config.host,
       dialect: config.dialect,
     });
+  }catch(err){
+    console.log(err)
+    console.log(config.password)
+  }
 } else {
   sequelize = new Sequelize(
     config.database,
