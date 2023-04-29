@@ -28,6 +28,7 @@ app.use('/', auth);
 
 // eslint-disable-next-line no-undef
 const PORT = process.env.PORT || 3006;
+const ADDRESS = process.env.ADDRESS || '0.0.0.0'
 
 const options = {
     definition: {
@@ -84,7 +85,7 @@ app.use(homeRoutes);
 
 db.sequelize.sync({ alter: false }).then(() => {
     console.log('Database Connected!');
-    app.listen(PORT, () => {
+    app.listen(PORT, ADDRESS, () => {
       console.log(`Server listening on port: ${PORT}`);
     });
   });
