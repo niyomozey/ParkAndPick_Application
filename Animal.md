@@ -1,6 +1,6 @@
-## Animal Controller
+## Animal 
 
-This code contains an `AnimalController` class which has various methods for performing CRUD (Create, Read, Update, Delete) operations on the `Animal` model. It also imports the `Animal` and `Slaughterhouse` models from the `sequelize` package.
+I had managed to complete various methods for performing CRUD (Create, Read, Update, Delete) operations on the `Animal` model. It also imports the `Animal` and `Slaughterhouse` models from the `sequelize` package.
 
 ### Methods
 
